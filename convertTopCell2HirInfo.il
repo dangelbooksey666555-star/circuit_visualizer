@@ -94,7 +94,7 @@ let((timeAndAuthor temp masterName_flag_table childrenOf1stobj masterName instan
                  )
                  instance = makeInstance('INST ?libName inst~>libName ?cellName inst~>cellName ?baseName inst~>baseName ?parent firstInst ?level firstInst~>level+1 ?id paramsTable['id] ?cell instCell)     
                  paramsTable['id_INST_table][paramsTable['id]]=instance
-                 printInfo2(paramsTable['port] instance)                                                       
+                 printInfo(paramsTable['port] instance)                                                       
                  childrenOf1stobj = nconc(childrenOf1stobj list(instance))  
                  masterName_flag_table[masterName] = t                      
              )
